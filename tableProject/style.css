@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #a5a3a3;
+}
+
+
+/* FORM TITLE */
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 30px 0 30px 100px;
+
+    border: 2px solid #4e4e4e;
+    border-radius: 20px;
+    box-shadow: 5px 15px 15px #3d3d3d;
+
+    max-width: 1700px;
+    width: 1700px;
+    min-height: 900px;
+    max-height: auto;
+    background-color: #e1dce6;
+}
+
+.form-student {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.form-student__show-form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 20px 20px 20px;
+    width: 50%;
+    height: 70px;
+    border-bottom: 2px solid #130752;
+}
+
+.form-student__svg:hover {
+    outline: 1px solid #210994;
+    border-radius: 100%;
+}
+
+.form-student__svg:hover ellipse {
+    fill: #9e7bfd;
+}
+
+.form-student__svg:hover path {
+    fill: #210994;
+}
+
+.form-student__svg:hover ~ .form-student__title {
+    color: #5a46c2;
+}
+
+.form-student__title {
+    margin: 0 0 0 10px;
+    font-size: 40px;
+    font-weight: 100;
+    color: #463a7e;
+}
+
+/* ============================ */
+
+
+
+/* FORM */
+
+.form-student__form {
+    display: none;
+    flex-flow: column nowrap;
+    width: 98%;
+}
+
+.form-student__block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0 50px 0;
+
+    width: 100%;
+    height: 60px;
+}
+
+.form-student__input {
+    flex-grow: 1;
+    padding: 5px 10px;
+
+    max-width: 400px;
+    height: 40px;
+
+    border: 1px solid #0850ad;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 5px #cdc4e7;
+}
+
+.form-student__input::placeholder {
+    color: #363636;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.form-student__btn {
+    padding: 10px 20px;
+    border: 1px solid #033980;
+    border-radius: 15px;
+    color: #FFF;
+    background-color: #3b1add;
+}
+
+.form-student__block > *:nth-child(-n + 4) {
+    margin-right: 20px;
+}
+
+/* ============================ */
+
+
+
+/* ERROR MESSAGE */
+
+.error-message {
+    display: none;
+    margin-right: 20px;
+    align-self: flex-end;
+
+    color: red;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.error-style {
+    border: 1px solid red;
+    box-shadow: 0 0 2px 2px red;
+}
+
+/* ============================ */
+
+
+
+/* TABLE STUDENT */
+
+.table-students {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0 auto 20px auto;
+    width: 98%;
+
+    border-radius: 20px;
+    border: 1px solid #bba9aa;
+    box-shadow: 0px 2px 10px 4px #bba9aa inset;
+}
+
+.table-students__title-block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.table-students__section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 415px;
+}
+
+.table-students__section:nth-child(-n + 3) {
+    border-right: 2px solid #ac9e9f;
+}
+
+.table-students__title-style {
+    margin: 0 0 10px 0;
+    padding: 10px 20px 0 20px;
+    font-size: 35px;
+    color: #100641;
+    border-bottom: 1px solid #100641;
+}
+
+.table-students__filter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+/* ============================ */
+
+
+
+/* FILTER SECTION */
+
+.table-students__svg-sort, .table-students__search-open {
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: #9370e4;
+    border: 1px solid #000;
+}
+
+.table-students__search-form {
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.table-students__search-form-input {
+    padding: 0 10px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #000;
+    border-right: 0;
+    border-radius: 30px 0 0 30px;
+}
+
+.table-students__search-svg {
+    width: 35px;
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid #000;
+    border-right: 0;
+    background-color: #0ff8aa;
+}
+
+.table-students__close-svg {
+    width: 40px;
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #000;
+    background-color: red;
+}
+
+/* ============================ */
+
+
+
+/* STUDENTS BLOCK */
+
+.students-block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    word-break: break-all;
+    width: 100%;
+}
+
+.students-block > li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    word-break: break-all;
+
+    width: 415px;
+    align-self: stretch;
+    min-height: 100px;
+
+    border-top: 2px solid #bba9aa;
+    border-right: 2px solid #bba9aa;
+    font-size: 22px;
+    line-height: 30px;
+    list-style: none;
+}
+
+.students-block > li > span {
+    background-color: rgb(188, 146, 255);
+}
+
+.students-block:last-child {
+    border-right: 0;
+}
+
+/* STATE STYLE */
+
+.filterNone {
+    background-color: rgb(150, 150, 150);
+}
+.filterMinToMax {
+    transform: rotate(180deg);
+    background-color: #9370e4;
+}
+
+.filterMaxToMin {
+    transform: rotate(0deg);
+    background-color: #9370e4;
+}
